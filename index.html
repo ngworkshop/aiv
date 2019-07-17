@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"
+    <title>ES6 with Webpack Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">EcmaScript 6 with Webpack</h1>
+        <div class="alert alert-danger" id="error" role="alert"></div>
+        <div class="row mt-5">
+            <div class="col offset-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="firstNumber">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupAction">Operations</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupAction">
+                        <option selected>Choose...</option>
+                        <option value="+">Sum</option>
+                        <option value="*">Multiply</option>
+                        <option value="/">Divide</option>
+                        <option value="-">Subtraction</option>
+                    </select>
+                    <input type="text" class="form-control" id="secondNumber">
+                </div>
+            </div>
+
+            <div class="col">
+                <button class="btn btn-primary" id="doit">Do Operation!</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card mt-5">
+                    <div class="card-header">Result</div>
+                    <div class="card-body">
+                        <span id="result"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+<script src="src/main.js"></script>
+</body>
+</html>
