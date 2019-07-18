@@ -22,9 +22,9 @@ export class ErrorHandler {
     this.showErrors();
   }
   showErrors() {
-    this.errorEl.classList.add(this.errorEl.hide);
+    this.errorEl.element.classList.remove(this.errorEl.hide);
   }
   hideErrors() {
-    this.errorEl.classList.remove(this.errorEl.hide);
+    this.errorEl.element.classList.add(this.errorEl.hide);
   }
 }

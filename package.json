@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "webpack": "webpack",
+    "debug:webpack": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "dev": "npm run webpack -- --mode development",
+    "prod": "npm run webpack -- --mode production",
+    "dev:debug": "npm run debug -- --mode development",
+    "prod:debug": "npm run debug -- --mode production",
+    "debug:index": "node --inspect --inspect-brk ./src/index.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.36.0",
+    "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6"
   }
 }
